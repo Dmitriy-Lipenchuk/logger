@@ -1,0 +1,5 @@
+# Project exclude paths
+/.gradle/
+/.idea/
+/application/build/
+/application/src/main/resources/log.txt
