@@ -38,9 +38,10 @@ public class Module extends AbstractModule {
             case "F" -> bind(Logger.class).to(FileLogger.class);
             case "CF" -> bind(Logger.class).to(ConsoleFileLogger.class);
         }
+
+        bind(FileWriter.class).toInstance(provideFileWriter());
     }
 
-    @Provides
     FileWriter provideFileWriter() {
         try {
             return new FileWriter(System.getProperty("user.dir") + "/application/src/main/resources/log.txt");
