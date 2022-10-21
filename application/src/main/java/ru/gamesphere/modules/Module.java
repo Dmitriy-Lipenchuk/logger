@@ -43,7 +43,7 @@ public class Module extends AbstractModule {
     @Provides
     FileWriter provideFileWriter() {
         try {
-            return new FileWriter(System.getProperty("user.dir") + "/src/main/resources/log.txt");
+            return new FileWriter(System.getProperty("user.dir") + "/application/src/main/resources/log.txt");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
