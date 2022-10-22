@@ -1,0 +1,3 @@
+0 <testtag> filelog </testtag> 
+1 <testtag> filelog </testtag> 
+2 <testtag> logfile </testtag> 
